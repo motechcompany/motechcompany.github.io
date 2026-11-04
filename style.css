@@ -1,0 +1,361 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.splash-container {
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background-color: #0033cc;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #002299;
+}
+/* Navigation Header Styles */
+.navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 20px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    padding-left: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    opacity: 1;
+}
+
+.nav-link.active {
+    border-bottom: 3px solid #ffffff;
+}
+
+.main-container {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.content-section {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 100px;
+    padding-left: 40px;
+}
+
+.home-content {
+    max-width: 800px;
+    color: #ffffff;
+}
+
+.services-list {
+    list-style: none;
+    margin-bottom: 30px;
+}
+
+.services-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.hero-text {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.overlay-services {
+    background-color: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.services-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.service-menu-btn {
+    background-color: #e0e0e0;
+    color: #000000;
+    border: none;
+    border-radius: 12px;
+    padding: 25px 20px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.service-menu-btn:hover {
+    background-color: #d0d0d0;
+    transform: translateY(-2px);
+}
+/* Scrollable View Configuration */
+.scrollable-view {
+    height: 100vh;
+    overflow-y: auto;
+    background-color: #ffffff;
+    padding-top: 80px;
+}
+
+.detailed-services-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 3x3 Grid of Electronic Items */
+.electronics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    gap: 25px;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 130px;
+}
+
+.grid-item img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+/* Description Text Block */
+.details-text-block {
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+.details-text-block p {
+    margin-bottom: 15px;
+}
+
+/* Centered Back Button styling */
+.back-btn-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.back-navigation-btn {
+    background-color: #d8d8d8;
+    color: #0033cc;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 60px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.back-navigation-btn:hover {
+    background-color: #c8c8c8;
+}
+.gallery-grid {
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.gallery-item {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.gallery-item.large {
+    height: 320px;
+}
+
+.gallery-item-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: 320px;
+}
+
+.gallery-item.small {
+    height: 152px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.section-subtitle {
+    color: #0033cc;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.contact-content {
+    max-width: 800px;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.contact-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact-intro {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 35px;
+    opacity: 0.9;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contact-channel {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.channel-label {
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.channel-label i {
+    font-size: 18px;
+    width: 20px;
+}
+
+.wa-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.channel-detail {
+    font-size: 16px;
+    padding-left: 30px;
+}
+
+.highlight-email {
+    font-weight: bold;
+}
+.about-content {
+    max-width: 800px;
+    color: #ffffff;
+    margin-top: 40px;
+}
+
+.about-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.about-heading {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <!-- Splash Screen Page -->
+    <div id="splash-screen" class="splash-container">
+        <img src="MOTECH Logo.png" alt="Motech Logo" class="logo">
+        <button id="continue-btn" class="btn">Click Here to Continue</button>
+    </div>
+
+    <div id="main-site" class="main-container" style="display: none;">
+        
+        <!-- Navigation Header -->
+        <header class="navbar">
+            <nav>
+                <ul>
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#" class="nav-link">Our services</a></li>
+                    <li><a href="#" class="nav-link">Contact</a></li>
+                    <li><a href="#" class="nav-link">About us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Home Page Content Section -->
+        <section id="home-section" class="content-section" style="background-image: url('home\ background.jpg');">
+            <div class="overlay">
+                <div class="home-content">
+                    <ul class="services-list">
+                        <li>★ Electronic services</li>
+                        <li>★ Electrical installations</li>
+                        <li>★ Network installation</li>
+                    </ul>
+                    <p class="hero-text">
+                        Motech delivers high-precision electronic services, reliable electrical installation, and high-speed network installation engineered as smart solutions for a better tomorrow
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Menu Section -->
+        <section id="services-section" class="content-section" style="background-image: url('home\ background.jpg'); display: none;">
+            <div class="overlay-services">
+                <div class="services-menu-container">
+                    <button class="service-menu-btn">Electronic Services</button>
+                    <button class="service-menu-btn">Electrical Installations</button>
+                    <button class="service-menu-btn">Network Installation</button>
+                </div>
+            </div>
+        </section>
+                <!-- Electronic Services Detailed Page -->
+        <section id="electronic-services-page" class="content-section scrollable-view" style="display: none;">
+            <div class="detailed-services-container">
+                
+                <!-- 3x3 Grid of Electronic Items -->
+                <div class="electronics-grid">
+                    <div class="grid-item"><img src="tv.jpg" alt="TV"></div>
+                    <div class="grid-item"><img src="phones.jpg" alt="Phone"></div>
+                    <div class="grid-item"><img src="electric dry iron.jpg" alt="Iron"></div>
+                    
+                    <div class="grid-item"><img src="speaker.jpg" alt="Speaker"></div>
+                    <div class="grid-item"><img src="electric cattle.jpg" alt="Kettle"></div>
+                    <div class="grid-item"><img src="microwave oven.jpg" alt="Microwave"></div>
+                    
+                    <div class="grid-item"><img src="laptop.jpg" alt="Laptop"></div>
+                    <div class="grid-item"><img src="bluetooth radio.jpg" alt="Radio"></div>
+                    <div class="grid-item"><img src="headphones.jpg" alt="Headphones"></div>
+                </div>
+
+                <!-- Description Text Block -->
+                <div class="details-text-block">
+                    <p>At MOTECH , we provide professional electronic repair, maintenance,and troubleshooting services for a wide range of electronic devices.</p>
+                    <p>From televisions, radios, and mobile phones to speakers, amplifiers, computers, and other electronic equipment, our skilled technicians are dedicated to diagnosing and fixing faults with precision and care.</p>
+                    <p>Whether it's a minor repair, component replacement, or a complex electronic problem, we deliver reliable, affordable, and quality solutions to keep your devices working perfectly.</p>
+                </div>
+
+                <!-- Back Button -->
+                <div class="back-btn-container">
+                    <button id="electronic-back-btn" class="back-navigation-btn">Back</button>
+                </div>
+
+            </div>
+        </section>
+                <section id="electrical-installations-page" class="content-section scrollable-view" style="display: none;">
+            <div class="detailed-services-container">
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item large"><img src="man in wires.jpg" alt="Electrical Work"></div>
+                    <div class="gallery-item-group">
+                        <div class="gallery-item small"><img src="house wires.jpg" alt="Wiring"></div>
+                        <div class="gallery-item small"><img src="Electricians.jpg" alt="Indoor Work"></div>
+                    </div>
+                    <div class="gallery-item large"><img src="fan install.jpg" alt="Fan Work"></div>
+                </div>
+
+                <h2 class="section-subtitle">Domestic Installation</h2>
+
+                <div class="details-text-block">
+                    <p>At MOTECH , we provide reliable and professional electrical installation services for homes, offices, and commercial buildings.</p>
+                    <p>From house wiring, lighting systems, ceiling fans, and power sockets to electrical panels and other electrical fittings, our team ensures safe, efficient, and high-quality installations.</p>
+                    <p>We bring power to your spaces with precision, safety, and professionalism.</p>
+                </div>
+
+                <div class="back-btn-container">
+                    <button id="electrical-back-btn" class="back-navigation-btn">Back</button>
+                </div>
+
+            </div>
+        </section>
+                <!-- Network Installation Detailed Page -->
+        <section id="network-installation-page" class="content-section scrollable-view" style="display: none;">
+            <div class="detailed-services-container">
+                
+                <div class="gallery-grid">
+                    <div class="gallery-item large"><img src="network1.jpg" alt="Network Wall Setup"></div>
+                    <div class="gallery-item-group">
+                        <div class="gallery-item small"><img src="network2.jpg" alt="Cabling Detail"></div>
+                        <div class="gallery-item small"><img src="network3.jpg" alt="Technician Working"></div>
+                    </div>
+                </div>
+
+                <div class="details-text-block">
+                    <p>At MOTECH , we provide reliable network installation and configuration services for homes, offices, and businesses.</p>
+                    <p>From router and Wi-Fi access point installation to network cabling, internet setup, and wireless network configuration, we ensure fast, stable, and secure connectivity.</p>
+                    <p>Our goal is to keep you connected with efficient networking solutions tailored to your needs.</p>
+                </div>
+
+                <div class="back-btn-container">
+                    <button id="network-back-btn" class="back-navigation-btn">Back</button>
+                </div>
+
+            </div>
+        </section>
+                <!-- Contact Page Section -->
+        <section id="contact-section" class="content-section" style="background-image: url('home\ background.jpg'); display: none;">
+            <div class="overlay">
+                <div class="contact-content">
+                    <h2 class="contact-title">Get In Touch With Us</h2>
+                    <p class="contact-intro">
+                        Have a project in mind or need professional technical assistance? MOTECH is here to help! Whether you need electronic repairs, electrical installations, or network solutions, we're just a message or call away. Contact us today, and let's find the right solution for your needs.
+                    </p>
+                    
+                                          <div class="contact-methods">
+                        <div class="contact-channel">
+                            <p class="channel-label"><img src="phone icon.jpg" alt="Phone" class="wa-icon"> Phone:</p>
+                            <p class="channel-detail">+ 250 796315285</p>
+                            <p class="channel-detail">+ 250 729175748</p>
+                        </div>
+
+                        <div class="contact-channel">
+                            <p class="channel-label"><img src="email icon.png" alt="Email" class="wa-icon"> Email Address:</p>
+                            <p class="channel-detail highlight-email">motechcompany001@gmail.com</p>
+                        </div>
+
+                        <div class="contact-channel">
+                            <p class="channel-label"><img src="whatsapp icon.jpg" alt="WhatsApp" class="wa-icon"> whatsapp number:</p>
+                            <p class="channel-detail">+250 789813896</p>
+                        </div>
+                    </div>
+
+
+
+        </section>
+                <!-- About Us Page Section -->
+        <section id="about-us-section" class="content-section" style="background-image: url('home\ background.jpg'); display: none;">
+            <div class="overlay">
+                <div class="about-content">
+                    <p class="about-text">
+                        MOTECH is a technology and technical services company dedicated to providing reliable solutions in electrical installation, electronic repair, and network installation. We specialize in helping individuals, homes, and businesses solve technical challenges through quality workmanship innovation, and professional service. Although we operate remotely, we are committed to delivering convenient, efficient, and dependable services wherever our clients need us. At MOTECH, our mission is to make technology work better for everyone.
+                    </p>
+                    
+                    <h2 class="about-heading">Our Mission</h2>
+                    
+                    <p class="about-text">
+                        Our mission is to provide affordable, reliable, and high-quality technical services that meet our clients' needs. We aim to deliver practical solutions through professionalism, innovation, and customer satisfaction.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
