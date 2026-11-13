@@ -18,7 +18,9 @@ document.addEventListener("click", function(event) {
             const isMobile = /Android|iPhone|iPad|iPod/i.test(navigator.userAgent);
 
             if (isMobile) {
-                window.location.href = "mailto:motechcompany001@://gmail.com";
+                const emailUser = "motechcompany001";
+                const emailDomain = "gmail.com";
+                window.location.href = "mailto:" + emailUser + "@" + emailDomain + "?subject=Inquiry%20for%20MOTECH";
             } else {
                 const part1 = "https://";
                 const part2 = "mail.google";
@@ -34,8 +36,7 @@ document.addEventListener("click", function(event) {
     }
 });
 
-// 3. Book a Technician Form Submission (for book.html)
-// 3. Book a Technician Form -> Send to Email & Return to Home Page
+// 3. Book a Technician Form -> Send via Web3Forms & Return to Home Page
 const bookingForm = document.getElementById("bookingForm");
 const formMessage = document.getElementById("formMessage");
 
@@ -49,9 +50,18 @@ if (bookingForm && formMessage) {
 
         try {
             const formData = new FormData(bookingForm);
-            const response = await fetch("https://web3forms.com", {
+            const object = Object.fromEntries(formData);
+            const json = JSON.stringify(object);
+
+            const endpoint = "https://" + "api.web3forms.com" + "/submit";
+
+            const response = await fetch(endpoint, {
                 method: "POST",
-                body: formData
+                headers: {
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
+                },
+                body: json
             });
 
             const result = await response.json();
@@ -65,7 +75,10 @@ if (bookingForm && formMessage) {
                     window.location.href = "index.html";
                 }, 2000);
             } else {
-                throw new Error("Submission failed");
+                formMessage.textContent = "Error: " + (result.message || "Could not send right now.");
+                formMessage.className = "form-message error";
+                submitBtn.textContent = "Submit Booking Request";
+                submitBtn.disabled = false;
             }
         } catch (error) {
             formMessage.textContent = "Could not send right now. Please call or WhatsApp +250 789 813 896.";
@@ -75,4 +88,3 @@ if (bookingForm && formMessage) {
         }
     });
 }
-
