@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOTECH | Book a Technician</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">
+            <a href="index.html">
+                <img src="logo.png" alt="MOTECH Logo" class="nav-logo">
+                <span>MOTECH</span>
+            </a>
+        </div>
+        
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="services.html">Our Services</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="contact.html#email-me">Email Me</a>
+            <a href="book.html" class="book-btn active">Book a Technician</a>
+        </nav>
+
+        <!-- Mobile Menu Icon -->
+        <div class="menu-icon" id="menuIcon">&#9776;</div>
+    </header>
+
+    <!-- Book a Technician Section -->
+    <section class="book-section page-section">
+        <div class="book-container">
+            <h2>Book a Technician</h2>
+            <p class="section-subtitle">Need an electrical, network, CCTV, or fire alarm installation? Fill out the form below and our team will contact you shortly.</p>
+
+            <form id="bookingForm" action="https://web3forms.com" method="POST">
+                <!-- Web3Forms Settings -->
+                <input type="hidden" name="access_key" value="3fe8d35f-46f2-4f9b-94c7-8f873e62bbee">
+                <input type="hidden" name="subject" value="New Technician Booking - MOTECH">
+                <input type="hidden" name="from_name" value="MOTECH Website">
+
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="Full Name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone / WhatsApp Number *</label>
+                    <input type="tel" id="phone" name="Phone Number" placeholder="e.g., +250 789 000 000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address (Optional)</label>
+                    <input type="email" id="email" name="Email" placeholder="Enter your email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="serviceType">Service Needed *</label>
+                    <select id="serviceType" name="Service Needed" required>
+                        <option value="" disabled selected>-- Select a Service --</option>
+                        <option value="Electrical Installation">Electrical Installation</option>
+                        <option value="Network Installation">Network Installation</option>
+                        <option value="CCTV Camera Installation">CCTV Camera Installation</option>
+                        <option value="Fire Alarm Installation">Fire Alarm Installation</option>
+                        <option value="Multiple Services / Full Package">Multiple Services / Full Package</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="location">Location / Sector *</label>
+                    <input type="text" id="location" name="Location" placeholder="e.g., Kigali - Kicukiro, Gasabo, Nyarugenge..." required>
+                </div>
+
+                <div class="form-group">
+                    <label for="details">Project Details *</label>
+                    <textarea id="details" name="Project Details" rows="4" placeholder="Describe what you need installed..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Booking Request</button>
+            </form>
+
+            <!-- Confirmation message container for JavaScript -->
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 MOTECH. All rights reserved. | Electrical, Network, CCTV & Fire Alarm Installations</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
