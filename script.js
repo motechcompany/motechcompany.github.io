@@ -1,4 +1,3 @@
-// 1. Mobile Navigation Menu Toggle
 const menuIcon = document.getElementById("menuIcon");
 const navLinks = document.getElementById("navLinks");
 
@@ -8,7 +7,6 @@ if (menuIcon && navLinks) {
     });
 }
 
-// 2. Smart "Email Me" Launcher (Opens Gmail App on Mobile, Gmail Web Tab on PC)
 document.addEventListener("click", function(event) {
     const clickedLink = event.target.closest("a");
     if (clickedLink) {
@@ -36,7 +34,6 @@ document.addEventListener("click", function(event) {
     }
 });
 
-// 3. Book a Technician Form -> Send via Web3Forms & Return to Home Page
 const bookingForm = document.getElementById("bookingForm");
 const formMessage = document.getElementById("formMessage");
 
