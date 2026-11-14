@@ -1,4 +1,3 @@
-/* Global Reset & Color Variables */
 :root {
     --bg-dark: #090D16;
     --bg-card: #111827;
@@ -24,7 +23,6 @@ body {
     line-height: 1.6;
 }
 
-/* Navigation Bar */
 .navbar {
     background-color: var(--bg-dark);
     padding: 15px 8%;
@@ -82,7 +80,6 @@ body {
     cursor: pointer;
 }
 
-/* Home / Hero Section */
 .hero {
     background: linear-gradient(135deg, #090D16 0%, #161032 60%, #0A2540 100%);
     color: var(--text-light);
@@ -185,8 +182,6 @@ body {
     gap: 15px;
     flex-wrap: wrap;
 }
-
-/* Our Services Cards */
 .services-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -237,7 +232,6 @@ body {
     margin-right: 6px;
 }
 
-/* About Us Section */
 .about-container {
     max-width: 850px;
     margin: 0 auto;
@@ -272,7 +266,6 @@ body {
     color: #FFFFFF;
 }
 
-/* Contact & Email Me Section */
 .contact-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -316,7 +309,6 @@ body {
     margin-top: 10px;
 }
 
-/* Book a Technician Form */
 .book-container {
     max-width: 650px;
     margin: 0 auto;
@@ -384,7 +376,6 @@ body {
     border: 1px solid #FCA5A5;
 }
 
-/* Footer */
 .footer {
     background-color: var(--bg-dark);
     color: var(--text-muted);
@@ -392,7 +383,6 @@ body {
     padding: 25px 8%;
     border-top: 2px solid var(--motech-purple);
 }
-    /* Mobile Responsive Menu */
 @media (max-width: 850px) {
     .menu-icon {
         display: block;
@@ -427,7 +417,6 @@ body {
         padding: 25px;
     }
 }
-/* Navbar Logo Alignment & Size */
 .logo a {
     display: flex;
     align-items: center;
@@ -441,7 +430,7 @@ body {
     padding: 3px;
     border-radius: 6px;
 }
-/* Home Page Photo Gallery */
+
 .home-gallery {
     padding: 75px 8%;
     background-color: var(--bg-light);
@@ -499,7 +488,6 @@ body {
     font-size: 0.98rem;
 }
 
-/* Home Services Preview */
 .home-services-preview {
     padding: 75px 8%;
     background-color: #EEF2F6;
@@ -510,7 +498,6 @@ body {
     margin-top: 10px;
 }
 
-/* Us on Tele Banner */
 .tele-banner {
     background: linear-gradient(135deg, #090D16 0%, #1E1B4B 100%);
     color: var(--text-light);
