@@ -26,4 +26,4 @@ Business contact details are repeated in page headers and footers. Update all pa
 
 ## Assets
 
-`assets/` contains smaller copies of the original repository’s logo and main photographs. The originals are retained. No external fonts, tracking scripts or UI libraries are loaded.
+`assets/` contains smaller copies of the original repository’s logo and main photographs. The originals are retained. Manrope is self-hosted under its bundled SIL Open Font License. No third-party font requests, tracking scripts or UI libraries are loaded.

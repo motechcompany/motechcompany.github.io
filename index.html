@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#112d39" />
+    <meta name="theme-color" content="#061f43" />
     <title>
       Electrical, Network &amp; Security Installations in Rwanda | MOTECH
     </title>
@@ -27,6 +27,13 @@
       content="https://motechcompany.github.io/assets/network-installation.jpg"
     />
     <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link
+      rel="preload"
+      href="assets/manrope-variable.ttf"
+      as="font"
+      type="font/ttf"
+      crossorigin
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="script.js" defer></script>
     <noscript
@@ -66,15 +73,6 @@
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
-    <div class="utility">
-      <div class="container utility-inner">
-        <span>Electrical · Networks · Security</span
-        ><span
-          >Kigali, Rwanda <span class="utility-separator">/</span>
-          <a href="tel:+250796315285">+250 796 315 285</a></span
-        >
-      </div>
-    </div>
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="MOTECH home"
@@ -115,18 +113,14 @@
     <main id="main">
       <section class="home-hero container">
         <div class="hero-copy">
-          <p class="eyebrow">
-            <span class="status-dot"></span> Installation services · Kigali,
-            Rwanda
-          </p>
-          <h1>Every<br />connection<br /><em>counts.</em></h1>
+          <h1>Care in every<br /><em>connection.</em></h1>
           <p class="hero-description">
-            Power, connectivity and peace of mind. Electrical, network, CCTV and
-            fire alarm installations for your home or business.
+            Electrical, network, CCTV and fire alarm installations for homes and
+            businesses in Rwanda.
           </p>
           <div class="hero-actions">
             <a class="button button-primary" href="book.html"
-              >Let’s talk about your project<svg
+              >Plan your installation<svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -134,38 +128,51 @@
                 aria-hidden="true"
               >
                 <path d="M5 12h14M12 5l7 7-7 7" /></svg></a
-            ><a class="phone-link" href="tel:+250796315285"
-              ><svg
+            ><a class="hero-service-link" href="services.html"
+              >View our services<svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
                 stroke-width="1.6"
                 aria-hidden="true"
               >
-                <path
-                  d="m8 3 3 5-3 3a15 15 0 0 0 5 5l3-3 5 3-1 4C10 23 1 14 4 4Z"
-                /></svg
-              ><span>Prefer a call?<strong>+250 796 315 285</strong></span></a
-            >
-          </div>
-          <div class="hero-note">
-            <span>For homes.</span><span>For businesses.</span
-            ><span>Across Rwanda.</span>
+                <path d="M5 12h14M12 5l7 7-7 7" /></svg
+            ></a>
           </div>
         </div>
         <figure class="hero-visual">
           <img
-            src="assets/electrical-installation.jpg"
-            width="735"
-            height="981"
-            alt="MOTECH technician fitting a pendant light in a home"
+            src="assets/network-installation.jpg"
+            width="1000"
+            height="753"
+            alt="MOTECH technician working on connections at a network rack"
             fetchpriority="high"
           />
           <figcaption>
             <span
-              ><span class="eyebrow">On the job</span>Care in every
-              connection.</span
-            ><span class="photo-index">01 / MOTECH</span>
+              ><span class="eyebrow">A closer look at our work</span>Network
+              installation &amp; setup.</span
+            ><span class="photo-index" aria-hidden="true"
+              ><svg
+                class="logo-symbol"
+                viewBox="110 95 960 550"
+                fill="none"
+                overflow="hidden"
+              >
+                <defs>
+                  <clipPath id="motech-emblem-clip">
+                    <rect x="110" y="95" width="960" height="550" />
+                  </clipPath>
+                </defs>
+                <image
+                  href="assets/logo.png"
+                  clip-path="url(#motech-emblem-clip)"
+                  x="0"
+                  y="0"
+                  width="1122"
+                  height="905"
+                /></svg
+            ></span>
           </figcaption>
         </figure>
       </section>
@@ -309,14 +316,14 @@
           <div class="work-grid">
             <figure class="work-wide">
               <img
-                src="assets/network-installation.jpg"
-                width="1000"
-                height="753"
+                src="assets/electrical-installation.jpg"
+                width="735"
+                height="981"
                 loading="lazy"
-                alt="Technician checking cabling at a network rack"
+                alt="Technician installing a pendant light in a home"
               />
               <figcaption>
-                <span>Networks & connectivity</span><span>01</span>
+                <span>Electrical & lighting</span><span>01</span>
               </figcaption>
             </figure>
             <figure class="work-portrait">
