@@ -1,92 +1,347 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MOTECH | Book a Technician</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header class="navbar">
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo.png" alt="MOTECH Logo" class="nav-logo">
-                <span>MOTECH</span>
-            </a>
-        </div>
-        
-        <nav class="nav-links" id="navLinks">
-            <a href="index.html">Home</a>
-            <a href="services.html">Our Services</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact</a>
-            <a href="contact.html#email-me">Email Me</a>
-            <a href="book.html" class="book-btn active">Book a Technician</a>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#112d39" />
+    <title>Book a Technician | MOTECH</title>
+    <meta
+      name="description"
+      content="Request a MOTECH technician for electrical, network, CCTV or fire alarm work. Share your project and location to get started."
+    />
+    <link rel="canonical" href="https://motechcompany.github.io/book.html" />
+    <meta property="og:title" content="Book a Technician | MOTECH" />
+    <meta
+      property="og:description"
+      content="Request a MOTECH technician for electrical, network, CCTV or fire alarm work. Share your project and location to get started."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://motechcompany.github.io/book.html"
+    />
+    <meta
+      property="og:image"
+      content="https://motechcompany.github.io/assets/network-installation.jpg"
+    />
+    <link rel="icon" href="assets/logo.png" type="image/png" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <noscript
+      ><style>
+        .menu-toggle {
+          display: none;
+        }
+        @media (max-width: 850px) {
+          .header-inner {
+            height: auto;
+            min-height: 80px;
+            flex-wrap: wrap;
+            padding-block: 10px;
+          }
+          .main-nav {
+            display: flex;
+            position: static;
+            order: 3;
+            flex-basis: 100%;
+            box-shadow: none;
+            padding: 0;
+            flex-wrap: wrap;
+            gap: 4px 24px;
+            border: 0;
+          }
+          .main-nav a {
+            border: 0;
+            font-size: 13px;
+            padding: 8px 0;
+          }
+          .header-actions {
+            margin-left: auto;
+          }
+        }
+      </style></noscript
+    >
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="utility">
+      <div class="container utility-inner">
+        <span>Electrical · Networks · Security</span
+        ><span
+          >Kigali, Rwanda <span class="utility-separator">/</span>
+          <a href="tel:+250796315285">+250 796 315 285</a></span
+        >
+      </div>
+    </div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="MOTECH home"
+          ><img
+            src="assets/logo.png"
+            width="112"
+            height="90"
+            alt="MOTECH — Smart Solutions for a Better Tomorrow"
+        /></a>
+        <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+          <a href="index.html">Home</a><a href="services.html">Services</a
+          ><a href="index.html#our-work">Our work</a
+          ><a href="about.html">About</a><a href="contact.html">Contact</a>
         </nav>
-
-        <div class="menu-icon" id="menuIcon">&#9776;</div>
-    </header>
-
-    <section class="book-section page-section">
-        <div class="book-container">
-            <h2>Book a Technician</h2>
-            <p class="section-subtitle">Need an electrical, network, CCTV, or fire alarm installation? Fill out the form below and our team will contact you shortly.</p>
-
-            <form id="bookingForm" action="https://web3forms.com" method="POST">
-                <!-- Web3Forms Settings -->
-                <input type="hidden" name="access_key" value="3fe8d35f-46f2-4f9b-94c7-8f873e62bbee">
-                <input type="hidden" name="subject" value="New Technician Booking - MOTECH">
-                <input type="hidden" name="from_name" value="MOTECH Website">
-
-                <div class="form-group">
-                    <label for="fullName">Full Name *</label>
-                    <input type="text" id="fullName" name="Full Name" placeholder="Enter your full name" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="phone">Phone / WhatsApp Number *</label>
-                    <input type="tel" id="phone" name="Phone Number" placeholder="e.g., +250 789 000 000" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="email">Email Address (Optional)</label>
-                    <input type="email" id="email" name="Email" placeholder="Enter your email address">
-                </div>
-
-                <div class="form-group">
-                    <label for="serviceType">Service Needed *</label>
-                    <select id="serviceType" name="Service Needed" required>
-                        <option value="" disabled selected>-- Select a Service --</option>
-                        <option value="Electrical Installation">Electrical Installation</option>
-                        <option value="Network Installation">Network Installation</option>
-                        <option value="CCTV Camera Installation">CCTV Camera Installation</option>
-                        <option value="Fire Alarm Installation">Fire Alarm Installation</option>
-                        <option value="Multiple Services / Full Package">Multiple Services / Full Package</option>
-                    </select>
-                </div>
-
-                <div class="form-group">
-                    <label for="location">Location / Sector *</label>
-                    <input type="text" id="location" name="Location" placeholder="e.g., Kigali - Kicukiro, Gasabo, Nyarugenge..." required>
-                </div>
-
-                <div class="form-group">
-                    <label for="details">Project Details *</label>
-                    <textarea id="details" name="Project Details" rows="4" placeholder="Describe what you need installed..." required></textarea>
-                </div>
-
-                <button type="submit" class="btn-primary">Submit Booking Request</button>
-            </form>
-
-            <div id="formMessage" class="form-message"></div>
+        <div class="header-actions">
+          <a class="button button-small" href="book.html"
+            >Book a visit<svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              aria-hidden="true"
+            >
+              <path d="M5 12h14M12 5l7 7-7 7" /></svg></a
+          ><button
+            class="menu-toggle"
+            type="button"
+            aria-expanded="false"
+            aria-controls="main-nav"
+            aria-label="Open navigation"
+          >
+            <span></span><span></span>
+          </button>
         </div>
-    </section>
-
-    <footer class="footer">
-        <p>&copy; 2026 MOTECH. All rights reserved. | Electrical, Network, CCTV & Fire Alarm Installations</p>
+      </div>
+    </header>
+    <main id="main">
+      <section class="container booking-layout">
+        <div class="booking-copy">
+          <p class="eyebrow">Book a technician</p>
+          <h1>Start with<br />the details.</h1>
+          <p class="page-lead">
+            Tell us what you need and where you need it. We’ll contact you to
+            discuss the work and arrange the next step.
+          </p>
+          <p class="booking-explanation">
+            This is a request, rather than a confirmed appointment. We’ll agree
+            on the scope and timing with you directly.
+          </p>
+          <div class="booking-help">
+            <p class="eyebrow">Want to talk first?</p>
+            <a class="phone-link" href="tel:+250796315285"
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                aria-hidden="true"
+              >
+                <path
+                  d="m8 3 3 5-3 3a15 15 0 0 0 5 5l3-3 5 3-1 4C10 23 1 14 4 4Z"
+                /></svg
+              ><span>Call MOTECH<strong>+250 796 315 285</strong></span></a
+            ><a
+              class="text-link"
+              href="https://wa.me/250789813896"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Message us on WhatsApp
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                aria-hidden="true"
+              >
+                <path d="M6 18 18 6M6 6h12v12" /></svg
+            ></a>
+          </div>
+        </div>
+        <div class="booking-panel">
+          <h2>Your project</h2>
+          <p class="form-intro">
+            Fields marked <span aria-hidden="true">*</span> are required.
+          </p>
+          <form
+            id="bookingForm"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="access_key"
+              value="3fe8d35f-46f2-4f9b-94c7-8f873e62bbee"
+            /><input
+              type="hidden"
+              name="subject"
+              value="New Technician Booking - MOTECH"
+            /><input
+              type="hidden"
+              name="from_name"
+              value="MOTECH Website"
+            /><input
+              type="checkbox"
+              name="botcheck"
+              class="honeypot"
+              tabindex="-1"
+              aria-hidden="true"
+              autocomplete="off"
+            />
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">Full name <span>*</span></label
+                ><input
+                  id="fullName"
+                  name="name"
+                  autocomplete="name"
+                  placeholder="Your full name"
+                  required
+                  maxlength="120"
+                />
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone / WhatsApp <span>*</span></label
+                ><input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="e.g. +250 789 000 000"
+                  required
+                  maxlength="40"
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email"
+                >Email <span class="optional">(optional)</span></label
+              ><input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="email"
+                placeholder="you@example.com"
+                maxlength="254"
+              />
+            </div>
+            <div class="form-group">
+              <label for="serviceType">What do you need? <span>*</span></label
+              ><select id="serviceType" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="Electrical Installation">
+                  Electrical Installation
+                </option>
+                <option value="Network Installation">
+                  Network Installation
+                </option>
+                <option value="CCTV Camera Installation">
+                  CCTV Camera Installation
+                </option>
+                <option value="Fire Alarm Installation">
+                  Fire Alarm Installation
+                </option>
+                <option value="Multiple Services / Full Package">
+                  Multiple services / full package
+                </option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="location">Location / sector <span>*</span></label
+              ><input
+                id="location"
+                name="location"
+                autocomplete="address-level2"
+                placeholder="e.g. Kigali, Kicukiro"
+                required
+                maxlength="200"
+              />
+            </div>
+            <div class="form-group">
+              <label for="details"
+                >Tell us about your project <span>*</span></label
+              ><textarea
+                id="details"
+                name="message"
+                rows="4"
+                placeholder="What needs installing or fixing? Include any details that will help us understand the job."
+                required
+                maxlength="5000"
+              ></textarea>
+            </div>
+            <p class="form-privacy">
+              Your details are sent to MOTECH through Web3Forms so we can
+              respond to your request.
+            </p>
+            <button class="button button-primary submit-button" type="submit">
+              <span>Send project request</span
+              ><svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="1.6"
+                aria-hidden="true"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </button>
+            <p
+              id="formMessage"
+              class="form-message"
+              role="status"
+              aria-live="polite"
+              tabindex="-1"
+              hidden
+            ></p>
+            <noscript
+              ><p class="small-note">
+                Submitting opens our form provider’s confirmation page. You can
+                also call or WhatsApp us directly.
+              </p></noscript
+            >
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-top">
+          <div>
+            <a class="footer-brand" href="index.html">MOTECH</a>
+            <p>Smart solutions for a better tomorrow.</p>
+            <p class="footer-location">
+              Based in Kigali. Working across Rwanda.
+            </p>
+          </div>
+          <div class="footer-links">
+            <span class="eyebrow">Explore</span
+            ><a href="services.html">Our services</a
+            ><a href="about.html">About MOTECH</a
+            ><a href="book.html">Book a technician</a>
+          </div>
+          <div class="footer-links">
+            <span class="eyebrow">Get in touch</span
+            ><a href="tel:+250796315285">+250 796 315 285</a
+            ><a href="tel:+250729175748">+250 729 175 748</a
+            ><a href="mailto:motechcompany001@gmail.com"
+              >motechcompany001@gmail.com</a
+            >
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span
+            >© <span data-year>2026</span> MOTECH. All rights reserved.</span
+          ><a
+            href="https://wa.me/250789813896"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Talk to us on WhatsApp
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.6"
+              aria-hidden="true"
+            >
+              <path d="M6 18 18 6M6 6h12v12" /></svg
+          ></a>
+        </div>
+      </div>
     </footer>
-
-    <script src="script.js"></script>
-</body>
+  </body>
 </html>
